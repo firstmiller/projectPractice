@@ -1,0 +1,44 @@
+header {
+    
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 58, 107, 1);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.logo {
+    mix-blend-mode: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration:none;
+}
+.header_name {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-size: 36px;
+    color: #95E5FF;
+}
+.menu {
+    margin-top: 51px;
+    margin-left: 41px;
+}
+.menu-item {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #95E5FF;
+    margin-right: 24px;
+}
+ul {
+    display: flex;
+}
+.menu-item {
+    list-style-type: none;
+}
