@@ -1,9 +1,10 @@
-@import "http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
 a {
     text-decoration:none;
 }
 .header {
     display: flex;
+    font-family: 'Ubuntu';
     justify-content: center;
     background-color: rgb(4, 58, 107, 1);
     mix-blend-mode: normal;
@@ -14,16 +15,20 @@ a {
     mix-blend-mode: normal;
     margin: 0.4em 0 0.4em 0;
 }
-.header_name {
+.logo img {
+    width: 75%;
+}
+.header__name {
     align-self: center;
     margin-left: -0.5em;
     font-style: normal;
     font-size: 1.5em;
     color: #95E5FF;
+    margin-right: 2em;
 }
 nav {
+    position: relative;
     align-self: flex-end;
-    margin-left: 2.7em;
 }
 .nav-item a {
     font-style: normal;
@@ -31,7 +36,11 @@ nav {
     font-size: 0.9em;
     line-height: 2.5em;
     color: #95E5FF;
-    margin-right: 1.4em;
+    margin: 0.7em;
+}
+.nav-item a:hover {
+    cursor: pointer;
+    background-color: blue;
 }
 ul {
     display: flex;
@@ -39,12 +48,11 @@ ul {
 .menu-item {
     list-style-type: none;
 }
-.language-img {
-    margin-left: 93%;
-    margin-bottom: 2%;
-    text-align: top;
+.header__language {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.language-img img {
-    object-fit: cover;
-    width: 35%;
+.header__language img {
+    width: 60%;
 }

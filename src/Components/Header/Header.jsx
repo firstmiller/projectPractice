@@ -7,28 +7,31 @@ import note from '../img/note.png'
 
 const Header = () => {
     return (
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">
+        <div>
+    <div>
+    <div className="header">
+        <div className="logo">
+            <a href="/">
                 <img src= {logo} alt="Логотип кафедры"/>
             </a>
         </div>
-        <div class="header__name">УГНТУ <br/> ЦТиМ</div>
+        <div className="header__name">УГНТУ <br/> ЦТиМ</div>
         <nav>
-        <div class="header__language">
+        <div className="header__language">
                 <img src={rus}/>
             </div>
             <ul>
-                <li class="nav-item"><a href="#">Новости</a></li>
-                <li class="nav-item"><a href="#">Студенту</a></li>
-                <li class="nav-item"><a href="#">Абитуриенту</a></li>
-                <li class="nav-item"><a href="#">Образование</a></li>
-                <li class="nav-item"><a href="#">История</a></li>
-                <li class="nav-item"><a href="#">О кафедре <img src={note}/></a></li>
+                <li className="nav-item"><a href="#">Новости</a></li>
+                <li className="nav-item"><a href="#">Студенту</a></li>
+                <li className="nav-item"><a href="#">Абитуриенту</a></li>
+                <li className="nav-item"><a href="#">Образование</a></li>
+                <li className="nav-item"><a href="#">История</a></li>
+                <li className="nav-item"><a href="#">О кафедре <img src={note}/></a></li>
             </ul>
         </nav>
-        <div class="language"></div>
+    </div>
     </div>   
+    </div>
     )
 };
 
