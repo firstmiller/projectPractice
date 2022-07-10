@@ -1,0 +1,79 @@
+html {
+    font-family: 'Ubuntu';
+}
+ a {
+text-decoration:none;
+ }
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 58, 107, 1);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo {
+    mix-blend-mode: normal;
+    margin-top: 0.5em;
+}
+.header_name {
+    align-self: center;
+    margin-left: 0.4em;
+    font-style: normal;
+    font-size: 2em;
+    color: #95E5FF;
+}
+nav {
+    margin-top: 3em;
+    margin-left: 2.7em;
+}
+.nav-item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 2.5em;
+    color: #95E5FF;
+    margin-right: 1.4em;
+}
+ul {
+    display: flex;
+}
+.menu-item {
+    list-style-type: none;
+}
+.container {
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    background-image: url(img/Фон.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container_content {
+    width: 67%;
+    height: 40%;
+    margin-top: 4%;
+    background-color: white;
+}
+.title h3 {
+    font-family: 'Ubuntu Regular';
+    font-size: 1.4em;
+    color: #000000;
+}
+.welcome {
+    font-size: 1.2em;
+}
+.content-info {
+    font-size: 1em;
+}
+.imgUniversity {
+    text-align: center;
+}
+.container_content img {
+    width: 40%;
+}

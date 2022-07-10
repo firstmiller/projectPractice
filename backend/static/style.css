@@ -1,0 +1,125 @@
+html {
+    font-family: 'Ubuntu';
+    background-image: url(img/Фон.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a {
+    text-decoration:none;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 58, 107, 1);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo {
+    align-self: center;
+    mix-blend-mode: normal;
+    margin: 0.4em 0 0.4em 0;
+}
+.logo img {
+    width: 75%;
+}
+.header_name {
+    align-self: center;
+    margin-left: -0.5em;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #95E5FF;
+}
+nav {
+    align-self: flex-end;
+    margin-left: 2.7em;
+}
+.nav-item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 2.5em;
+    color: #95E5FF;
+    margin-right: 1.4em;
+}
+ul {
+    display: flex;
+}
+.menu-item {
+    list-style-type: none;
+}
+.language-img {
+    margin-left: 93%;
+    margin-bottom: 2%;
+    text-align: top;
+}
+.language-img img {
+    object-fit: cover;
+    width: 35%;
+}
+.container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+}
+.white_box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container_content {
+    margin-top: 10%;
+    align-self: center;
+    width: 60%;
+    height: 40%;
+    margin-top: 4%;
+    background-color: white;
+}
+.title p {
+    margin: 0.5em 0 1.5em 0.5em;
+    font-family: 'Ubuntu Regular';
+    font-size: 1.4em;
+    color: #000000;
+}
+.welcome {
+    margin: 0 0 1.5em 0.5em;
+    font-size: 1.2em;
+}
+.content-info {
+    margin: 0.5em 0 1em 0.5em;
+    font-size: 1em;
+}
+.imgUniversity {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 33%;
+    margin-bottom: 20%;
+}
+.container_content img {
+    width: 40%;
+}
+.сontacts {
+    margin-left: 45%;
+}
+.news {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.left-news {
+    width: 25%;
+}
+.center-news {
+    margin: 0 5% 0 5%;
+    width: 35%;
+}
+.right-news {
+    width: 25%;
+}
