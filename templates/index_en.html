@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Кафедра ЦТиМ</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index_en">
+                <img src="{{url_for('static', filename='img/logo.png')}}" alt="Логотип кафедры">
+            </a>
+        </div>
+        <div class="header_name">USPTU <br> DT&M</div>
+        <nav>
+            <div class="language-img">
+                <a href="/"><img src="{{url_for('static', filename='img/eng.png')}}"></a>
+            </div>
+            <ul>
+                <li class="nav-item"><a href="/news_en">News</a></li>
+                <li class="nav-item"><a href="/students_en">For students</a></li>
+                <li class="nav-item"><a href="/applicants_en">For applicants</a></li>
+                <li class="nav-item"><a href="/education_en">Education</a></li>
+                <li class="nav-item"><a href="/history_en">History</a></li>
+                <li class="nav-item"><a href="/about_en">About department</a></li>
+            </ul>
+        </nav>
+        <div class="language"></div>
+    </header>
+    <div class="container">
+        <div class="container_content">
+            <div class="title">
+                <p>Department of Digital Technologies and Modeling</p>
+            </div>
+            <p class="welcome">Welcome!</p>
+            <p class="content-info">
+                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+
+            </p>
+            <div class="imgUniversity">
+                <img src="{{ url_for('static', filename='img/university.png') }}" align="left" alt="Фотография 12 корпуса УГНТУ">
+                <p class="сontacts">Our contacts:</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

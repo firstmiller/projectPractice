@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Кафедра ЦТиМ</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="{{url_for('static', filename='img/logo.png')}}" alt="Логотип кафедры">
+            </a>
+        </div>
+        <div class="header_name">УГНТУ <br> ЦТиМ</div>
+        <nav>
+            <div class="language-img">
+                <a href="index_en"><img src="{{url_for('static', filename='img/rus.png')}}"></a>
+            </div>
+            <ul>
+                <li class="nav-item"><a href="/news_ru">Новости</a></li>
+                <li class="nav-item"><a href="/students_ru">Студенту</a></li>
+                <li class="nav-item"><a href="/applicants_ru">Абитуриенту</a></li>
+                <li class="nav-item"><a href="/education_ru">Образование</a></li>
+                <li class="nav-item"><a href="/history_ru">История</a></li>
+                <li class="nav-item"><a href="/about_ru">О кафедре</a></li>
+            </ul>
+        </nav>
+        <div class="language"></div>
+    </header>
+    <div class="container">
+        <div class="container_content">
+            <div class="title">
+                <p>Кафедра цифровых технологий и моделирования</p>
+            </div>
+            <p class="welcome">Добро пожаловать!</p>
+            <p class="content-info">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+                Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст 
+                Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</p>
+            <div class="imgUniversity">
+                <img src="{{ url_for('static', filename='img/university.png') }}" align="left" alt="Фотография 12 корпуса УГНТУ">
+                <p class="сontacts">Контакты:</p>
+                <p class="сontacts">450078, г. Уфа, ул. Чернышевского, 145, каб. 404</p>
+                <p class="сontacts">Тел. (347) 253-71-73</p>
+                <p class="сontacts">e-mail: info@itkaf.ru</p>
+                <p class="сontacts">ВК: vk.com/it_ugntu</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
