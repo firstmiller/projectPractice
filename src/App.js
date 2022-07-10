@@ -1,9 +1,13 @@
 import React from "react";
+
+
+import MainPage from "./pages/MainPage";
+
+import "./reset.css"
+
 function App() {
   return (
-    <div>
-      <h1>HELLLO!</h1>
-    </div>
+    <MainPage/>
   );
 }
 
