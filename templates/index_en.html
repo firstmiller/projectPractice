@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>Кафедра ЦТиМ</title>
@@ -27,7 +27,15 @@
                 <li class="nav-item"><a href="/applicants_en">For applicants</a></li>
                 <li class="nav-item"><a href="/education_en">Education</a></li>
                 <li class="nav-item"><a href="/history_en">History</a></li>
-                <li class="nav-item"><a href="/about_en">About department</a></li>
+                <li class="nav-item nav-item_sub">
+                    <a href="#">About department <img src="{{url_for('static', filename='img/note.png')}}"></a>
+                    <ul class="sub-menu">
+                        <li class="nav-item-sub"><a href="#">Teachers</a></li>
+                        <li class="nav-item-sub"><a href="#">Employment</a></li>
+                        <li class="nav-item-sub"><a href="#">Achievements</a></li>
+                        <li class="nav-item-sub"><a href="#">Documents</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="language"></div>
@@ -50,5 +58,6 @@
             </div>
         </div>
     </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>

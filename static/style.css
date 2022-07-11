@@ -46,10 +46,32 @@ nav {
     font-size: 0.9em;
     line-height: 2.5em;
     color: #95E5FF;
-    margin-left: 1.4em;
+    margin: 0.7em;
 }
-.nav-item a:hover {
+.nav-item:hover {
     background-color: #0a88b9;
+}
+.nav-item_sub {
+    position: relative;
+    cursor: pointer;
+}
+.sub-menu {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #1b569d;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    height: 0;
+    width:100%;
+}
+.nav-item-sub:hover {
+    background-color: #ffffff4e;
 }
 ul {
     display: flex;
