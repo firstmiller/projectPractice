@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.png')}}" type="image/png">
     <title>Кафедра ЦТиМ</title>
 </head>
 <body>
@@ -38,6 +39,9 @@
                     </ul>
                 </li>
             </ul>
+            <div class="hamburger-menu">
+                <img src="{{url_for('static', filename='img/hamburger-menu.png')}}" alt="Гамбургер меню">
+            </div>
         </nav>
         <div class="language"></div>
     </header>

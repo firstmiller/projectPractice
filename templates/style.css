@@ -12,14 +12,18 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo {
+    align-self: center;
     mix-blend-mode: normal;
     margin-top: 0.5em;
 }
+.logo img {
+    width: 75%;
+}
 .header_name {
     align-self: center;
-    margin-left: 0.4em;
+    margin-left: -0.5em;
     font-style: normal;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #95E5FF;
 }
 nav {
@@ -66,10 +70,14 @@ ul {
 .menu-item {
     list-style-type: none;
 }
+.hamburger-menu {
+    display: none;
+}
 .container {
-    display:flex;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    justify-content: center;
+    align-content: flex-start;
     background-image: url(img/Фон.png);
     min-height: 100%;
     background-repeat: no-repeat;
@@ -81,25 +89,89 @@ ul {
     background-size: cover;
 }
 .container_content {
-    width: 67%;
+    align-self: center;
+    margin-top: 5%;
+    width: 60%;
     height: 40%;
-    margin-top: 4%;
     background-color: white;
 }
-.title h3 {
+.title p {
+    margin: 0.5em 0 1.5em 0.5em;
     font-family: 'Ubuntu Regular';
     font-size: 1.4em;
     color: #000000;
 }
 .welcome {
+    margin: 0 0 1.5em 0.5em;
     font-size: 1.2em;
 }
 .content-info {
+    margin: 0.5em 0 1em 0.5em;
     font-size: 1em;
 }
 .imgUniversity {
-    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 33%;
+    margin-bottom: 20%;
 }
 .container_content img {
     width: 40%;
+}
+.сontacts {
+    margin-left: 45%;
+}
+@media (max-width: 768px) {
+    .language-img {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .hamburger-menu img{
+        width: 10%;
+        align-self: center;
+        float: right;
+        margin-right: 0.8em;
+        margin-bottom: 8px;
+    }
+    .imgUniversity {
+        display: block;
+        width: 90%;
+    }
+    .contacts {
+        display: none;
+    }
+}
+@media (max-width: 635px) {
+    .logo {
+        margin-left: 3%;
+    }
+    .header_name {
+        display: none;
+    }
+    .content-info {
+        margin: 0.5em 0 1em 0.5em;
+    }
+    .container_content img {
+        display: block;
+        width: 80%;
+    }
+    .imgUniversity {
+        display: block;
+    }
+    .title p {
+        font-size: 1em;
+    }
+    .welcome {
+        font-size: 0.8em;
+    }
+    .content-info {
+        font-size: 0.7em;
+    }
+    .сontacts {
+        display:none;
+    }
 }
